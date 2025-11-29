@@ -1,0 +1,11 @@
+2025-11-28 18:50:55.036 ERROR: 10.10.7.44 - GET /api/v1/case/project/Rakibbbbbbbbb 500 - 35.181 ms
+2025-11-28 18:55:14.479 ERROR: 10.10.7.44 - GET /api/v1/case/project/Rakibbbbbbbbb 500 - 40.439 ms
+2025-11-28 18:56:21.181 ERROR: 10.10.7.44 - GET /api/v1/case/project/Rakibbbbbbbbb 404 - 1.605 ms
+2025-11-28 18:57:48.839 ERROR: 10.10.7.44 - GET /api/v1/case/project/69218f4889cf8eb2545e1eb 500 - 24.441 ms
+2025-11-28 19:04:42.822 ERROR: 10.10.7.44 - GET /api/v1/dashboard/users 401 - 8.050 ms
+2025-11-28 19:04:42.837 ERROR: 10.10.7.44 - POST /api/v1/auth/refresh-token 400 - 11.660 ms
+2025-11-28 19:04:47.547 ERROR: 10.10.7.44 - GET /api/v1/user/profile 401 - 1.415 ms
+2025-11-28 19:04:47.593 ERROR: 10.10.7.44 - POST /api/v1/auth/refresh-token 400 - 1.160 ms
+2025-11-28 19:04:59.304 ERROR: 10.10.7.44 - POST /api/v1/auth/login 400 - 7.558 ms
+2025-11-28 20:16:06.015 ERROR: 10.10.7.44 - POST /api/v1rule 404 - 10.360 ms
+2025-11-28 20:16:11.327 ERROR: 10.10.7.44 - POST /api/v1/rule 401 - 9.188 ms

@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\.5440688071794322274feb883203df48b61f1a87-audit.json",
+    "files": [
+        {
+            "date": 1763955360112,
+            "name": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\error-2025-11-24.log",
+            "hash": "76502c2f67fcad764105c19f872414d0001b0ae30f912741bbd5820cec890f77"
+        },
+        {
+            "date": 1764042573900,
+            "name": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\error-2025-11-25.log",
+            "hash": "b7f5e6de9892feb661a3c8951c48273939902ef5bd5e4d7c2cc27cd9a561bbd4"
+        },
+        {
+            "date": 1764131883854,
+            "name": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\error-2025-11-26.log",
+            "hash": "0f7666d5eeafe2907ca7b249235b00d36ee41d0da1e23d9808a885002fec42a5"
+        },
+        {
+            "date": 1764214372191,
+            "name": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\error-2025-11-27.log",
+            "hash": "966dbdeab6225c1503feafcc4df0d94a75dab74444b317488da86fc4d1116850"
+        },
+        {
+            "date": 1764334199262,
+            "name": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\error-2025-11-28.log",
+            "hash": "e1cf6ec27a60dc74f83ea2ef69e54d2883e95e07e26e3f6503ca18304d94fdb0"
+        },
+        {
+            "date": 1764388228521,
+            "name": "D:\\Bd Calling (Rakib Projects)\\arck_knight_backend\\logs\\error-2025-11-29.log",
+            "hash": "01df819ad29f0c4474acef3c333ebb3a97245da36705e4f0cbb4e529c1f0b2d4"
+        }
+    ],
+    "hashType": "sha256"
+}
