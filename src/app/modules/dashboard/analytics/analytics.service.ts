@@ -2,7 +2,6 @@ import moment from "moment";
 import { User } from "../../user/user.model";
 import { ProjectModel } from "../../project/project.model";
 import { Case } from "../../case/case.model";
-
 const totalUserTotalCaseAndTotalProjectFromDB = async () => {
   const startOfWeek = moment().startOf("week").toDate();
   const endOfWeek = moment().endOf("week").toDate();
