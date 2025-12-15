@@ -12,6 +12,14 @@ const caseSchema = new Schema<ICase>(
       type: String,
       required: true,
     },
+    lat: {
+      type: Number,
+      required: true,
+    },
+    lng: {
+      type: Number,
+      required: true, 
+    },
     case_type: {
       type: String,
       required: true,

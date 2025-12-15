@@ -13,6 +13,8 @@ export type ICase = {
   project: Types.ObjectId;
   case_name: string;
   case_type: string;
+  lat: number;
+  lng: number;
   case_location: string;
   case_place: "aerial" | "underground";
   cable_details: cableDetails[];
