@@ -23,30 +23,40 @@ jobs:
       - name: Deploy to Server
         run: |
           ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.HOST }} << 'EOF'
-          # Ensure Node.js & npm are installed
+
+          # ---- Node.js install ----
           if ! command -v node > /dev/null; then
             echo "Node.js not found. Installing..."
             curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
             sudo apt-get install -y nodejs
           fi
 
-          # Ensure pm2 is installed globally
+          # ---- npm install (FIX) ----
+          if ! command -v npm > /dev/null; then
+            echo "npm not found. Installing..."
+            sudo apt-get install -y npm
+          fi
+
+          # ---- Enable corepack (safe) ----
+          sudo corepack enable || true
+
+          # ---- pm2 install ----
           if ! command -v pm2 > /dev/null; then
             echo "pm2 not found. Installing..."
             sudo npm install -g pm2
           fi
 
-          # Navigate to app directory and deploy
+          # ---- Deploy ----
           cd ${{ secrets.APP_DIR }}
           git pull origin main
           npm install
           npm run build
-          
+
           if pm2 describe server > /dev/null 2>&1; then
             pm2 reload server --update-env
           else
             pm2 start dist/server.js --name server
           fi
-          
+
           pm2 save
           EOF
