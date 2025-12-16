@@ -6,7 +6,7 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "start": "node dist/server.js",
     "build": "tsc && npm run copy-files",
-    "copy-files": "xcopy /E /I /Y src\\app\\public dist\\app\\public",
+     "copy-files": "cpy \"src/app/public/**\" \"dist/app/public\" --parents",
     "pm2:start": "pm2 start ecosystem.config.js",
     "pm2:stop": "pm2 stop ecosystem.config.js",
     "pm2:restart": "pm2 restart ecosystem.config.js",
